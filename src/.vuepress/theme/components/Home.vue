@@ -3,14 +3,17 @@
     <header class="hero">
       <div class="inner">
         <div class="left">
-          <img v-if="data.heroImage" :src="$withBase(data.heroImage)" :alt="data.heroAlt || 'hero'" />
+          <img
+            v-if="data.heroImage"
+            :src="$withBase(data.heroImage)"
+            :alt="data.heroAlt || 'hero'"
+          />
         </div>
 
         <div class="right">
-          <h1
-            v-if="data.heroText !== null"
-            id="main-title"
-          >{{ data.heroText || $title || 'Vue.js' }}</h1>
+          <h1 v-if="data.heroText !== null" id="main-title">
+            {{ data.heroText || $title || 'Vue.js' }}
+          </h1>
 
           <h2 class="tagline" v-if="tagline" v-html="tagline"></h2>
 
@@ -28,9 +31,16 @@
 
     <SpecialSponsors :sponsors="sponsors.special_sponsors" />
 
-    <section v-if="data.features && data.features.length" class="section-features">
+    <section
+      v-if="data.features && data.features.length"
+      class="section-features"
+    >
       <div class="inner">
-        <div v-for="(feature, index) in data.features" :key="index" class="feature">
+        <div
+          v-for="(feature, index) in data.features"
+          :key="index"
+          class="feature"
+        >
           <h2>{{ feature.title }}</h2>
           <p v-html="feature.details"></p>
         </div>
@@ -94,11 +104,7 @@ export default {
     },
 
     tagline() {
-      return (
-        this.data.tagline ||
-        this.$description ||
-        'The Progressive JavaScript Framework'
-      )
+      return this.data.tagline || this.$description || '渐进式JavaScript框架'
     }
   },
 

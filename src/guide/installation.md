@@ -1,10 +1,10 @@
-# Installation
+# 安装
 
-## Release Notes
+## 最新发布版本注意
 
-Latest version: ![npm](https://img.shields.io/npm/v/vue/next.svg)
+最新版本: ![npm](https://img.shields.io/npm/v/vue/next.svg)
 
-Detailed release notes for each version are available on [GitHub](https://github.com/vuejs/vue-next/blob/master/CHANGELOG.md).
+关于每个发布版本的详细说明，请参见 [GitHub](https://github.com/vuejs/vue-next/blob/master/CHANGELOG.md).
 
 ## Vue Devtools
 
